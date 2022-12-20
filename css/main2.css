@@ -1,0 +1,169 @@
+
+ html {
+    font-size: 10px;
+  }
+  
+  @media screen and (max-width:400px) {
+    html {
+      font-size: 9.444444444444444px;
+    }
+  
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    background: #ffffff;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.778;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  
+  /* ------------------------------------------------------------------- 
+   * ## links 
+   * ------------------------------------------------------------------- */
+  /* a {
+    color: #8dc63f;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    color: #33648a;
+  }
+  
+  a:hover,
+  a:active {
+    outline: 0;
+  } */
+  
+   
+  /* ===================================================================
+   * # intro
+   *
+   * ------------------------------------------------------------------- */
+   .s-intro {
+    width: 100%;
+    height: 100vh;
+    min-height: 82rem;
+    background-color: #000000;
+    background-image: url('./../images/Home\ Page.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .s-intro--particles {
+    background-color: #010e0f;
+  }
+  
+  .s-intro--particles::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  
+  /* -------------------------------------------------------------------
+   * ## intro particles 
+   * ------------------------------------------------------------------- */
+  .intro-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    opacity: .35;
+  }
+  
+  .intro-particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+   
+  
+  /* ===================================================================
+   * # site header
+   *
+   * ------------------------------------------------------------------- */
+   .s-header {
+    z-index: 100;
+    width: 100%;
+    height: 8rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+  
+  
+  /* -------------------------------------------------------------------
+   * ## header email
+   * ------------------------------------------------------------------- */
+  .header-email {
+    font-size: 1.5rem;
+    line-height: 3.2rem;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    top: 50%;
+    right: 8rem;
+  }
+  
+  .header-email svg {
+    fill: #72a130;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: .4rem;
+    -webkit-transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 3px, 0);
+  }
+  
+  .header-email a {
+    color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    position: relative;
+  }
+  
+  .header-email a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #72a130;
+    transition: width 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .header-email a:hover {
+    color: #ffffff;
+  }
+  
+  .header-email a:hover::after {
+    width: 100%;
+  }
+
